@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashBoad.SearchingShowData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_main"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:scaleX="3"
+            android:scaleY="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="3324-search-icon.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1"
+            />
+        <Button
+            android:visibility="gone"
+            android:shadowColor="@color/imgcolor"
+            android:shadowDy="8"
+            android:shadowDx="0"
+            android:id="@+id/cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_85sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/circle"
+            android:drawableLeft="@drawable/ic_map"
+            android:paddingLeft="@dimen/_12sdp"
+            android:textColor="#fff" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/reverse"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/circle"
+            android:drawableLeft="@drawable/ic_dataarow"
+            android:paddingLeft="@dimen/_9sdp"
+            android:textColor="#fff" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/filter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/circle"
+            android:drawableLeft="@drawable/ic_filter_grid_solid"
+            android:paddingLeft="@dimen/_9sdp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

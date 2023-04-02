@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Restaurants.Restaurantbooking">
+    <RelativeLayout
+
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+               <Button
+                    android:layout_weight="2"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/reserve"
+                    style="@style/Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_design"
+                    android:elevation="@dimen/_15sdp"
+                    android:fontFamily="@font/josefin_sans_semibold"
+                    android:paddingLeft="@dimen/_5ssp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="Reserve"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_new"/>
+    <LinearLayout
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nature" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@id/image"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-28dp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:src="@drawable/like"
+                    app:tint="@color/red"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight=".0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Sun Island Resort and Spa"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:isIndicator="true"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:progressTint="@color/textcolor"
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-75dp"
+                        android:numStars="5"
+                        android:scaleX=".4"
+                        android:scaleY=".4" />
+                    <TextView
+                        android:layout_marginLeft="-65dp"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="4.5 %"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="@dimen/_9sdp"
+                        android:id="@+id/tv_excelent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:textSize="@dimen/_9sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Excellent"
+                        android:textColor="@color/blue"
+                        />
+
+                    <TextView
+                        android:textSize="@dimen/_9sdp"
+                        android:id="@+id/review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="0"
+                        android:textColor="#707070" />
+
+                    <TextView
+                        android:textSize="@dimen/_9sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="reviews"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:background="@drawable/strike_through"
+                    android:id="@+id/current_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/josefin_sans_light"
+                    android:text="₹ 24,000"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:layout_gravity="right"
+                    android:id="@+id/offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="₹ 14,000"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        <TextView
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:text="Food Menu List"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:id="@+id/recyclerview"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

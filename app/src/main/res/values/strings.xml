@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PartyPlanet</string>
+
+    <string name="facebook_app_id">808806310192690</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="message">Place with such capacity is not available you can contact for phone : +91 7307939891</string>
+
+
+    <array name="slider_values">
+        <item>20.0</item>
+        <item>70.0</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userId">Email ID</string>
+    <string name="password">Password</string>
+    <string name="cpassword">Confirms Password</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="slider1text">Slider \nComponent UI</string>
+    <string name="your_string_here"><u>Tell Us Your Location</u>.</string>
+    <string name="review"><u> 0 Reviews</u>.</string>
+    <string name="text">Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice. Get the latest Covid-19 advice.</string>
+    <string name="title_activity_frequentlyask_question">FrequentlyaskQuestion</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="advice">Your safety matters. If you think Coronavirus (COVID-19) may affect your plans please visit our Help Centre. Alternatively, here\'s what you should know at this time</string>
+    <string name="adviceimportant"><u><b>Important: </b></u>This information is provided for informational purposes only. Given the pace at which the world continues to adapt, travel restrictions are changing rapidly. You should not rely exclusively on this tool and should confirm the accuracy of any information provided in it with official government guidance. The information in this tool is provided by a third party, Sherpa. Booking.com is not responsible for its accuracy or presentation. Neither Booking.com nor Sherpa is responsible for any translation that you or a third party (e.g. Google Translate) carry out on such information.\n\nBy using this tool, you acknowledge you have read this note and agree to our Terms &amp; Conditions and Privacy &amp; Cookie Statement </string>
+    <string name="government">Please check for travel restrictions before booking and travelling to an accommodation.Travel may be permitted only for certain purposes and in particular,touristic travel may not be allowed. To help you on your way, we includedpublicly available links to government websites for several countries aroundthe world. Please note that not all countries are covered below. If a country is notincluded in this overview it doesn’t mean that no travel restrictions are in place and werecommend that you seek out information for any country you are planning to travel to.We are not responsible for the content of the public (government) websites linked below.Government responses continue to evolve, so please check back often forupdates and rely on your national and local government for the most current information</string>
+    <string name="firstName">First Name <font color='red'>*</font></string>
+    <string name="secondName">Last Name <font color='red'>*</font></string>
+    <string name="emai">E-mail Address <font color='red'>*</font></string>
+    <string name="country">Country/Region <font color='red'>*</font></string>
+    <string name="city">City <font color='red'>*</font></string>
+    <string name="contact">Mobile Phone <font color='red'>*</font></string>
+    <string name="budget">Budget <font color='red'>*</font></string>
+    <string name="guest">Number of guest <font color='red'>*</font></string>
+    <string name="adharNumber">Id proof <font color='red'>*</font></string>
+    <string name="title_activity_lawn_booking">lawnBookingActivity</string>
+
+
+    <string name="title_activity_filtration">FiltrationActivity</string>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/textcolor</item>
+        <item name="colorControlActivated">@color/textcolor</item>
+    </style>
+
+</resources>

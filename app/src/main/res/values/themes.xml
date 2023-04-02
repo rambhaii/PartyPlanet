@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PartyPlanet" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="Heading">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">@font/josefin_sans_bold</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="fontWeight">70</item>
+    </style>
+
+    <style name="Heading1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">@font/josefin_sans_light</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="fontWeight">70</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="edittexthint" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+
+    </style>
+
+    <style name="Theme.PartyPlanet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.PartyPlanet.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PartyPlanet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Base application theme. -->
+
+</resources>

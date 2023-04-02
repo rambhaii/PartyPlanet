@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="@dimen/_110sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:foreground="@drawable/shadow"
+                        android:src="@drawable/foo" />
+                    <TextView
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/white"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/josefin_sans_light"
+                       />
+
+                    <CheckBox
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Pizza"
+                        android:textStyle="bold"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/white"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

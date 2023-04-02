@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20px"
+    android:orientation="vertical">
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:blurOverlayColor="@color/colorOverlay">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+               android:id="@+id/back"
+               android:layout_alignParentRight="true"
+                android:background="@null"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="X"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Allow location access to improve our Bookings"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_16sdp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/searching"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="We use your location to improve your bookings  experience, ensuring you only see bookings according to location to available in your area when app is in use."
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        />
+
+                    <CheckBox
+
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_13ssp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Allow this Partyplanet app to access your location and skip this step in the future. "
+                        android:textStyle="bold"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/black"
+                        />
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Access at any time in  "/>
+                        <TextView
+                            android:id="@+id/permision"
+                            android:textColor="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="permission setting"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#B3B2B2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:alpha="0.8">
+
+                        <Button
+                            android:id="@+id/Cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/rect"
+                            android:backgroundTint="@color/border"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Not Allow "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <Button
+                            android:id="@+id/okButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/rect"
+                            android:backgroundTint="@color/textcolor"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Allow access"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+
+</LinearLayout>

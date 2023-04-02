@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Restaurants.RestauMenuBooking"
+    >
+  <RelativeLayout
+
+      android:id="@+id/layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="#FFFFFF"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/amt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/_15sdp"
+          android:layout_marginRight="@dimen/_25sdp"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:textColor="@color/red"
+          />
+      <Button
+          android:layout_weight="2"
+          android:layout_alignParentRight="true"
+          android:id="@+id/bookNow"
+          style="@style/Heading"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rect_design"
+          android:elevation="@dimen/_15sdp"
+          android:fontFamily="@font/josefin_sans_semibold"
+          android:paddingLeft="@dimen/_5ssp"
+          android:paddingTop="@dimen/_6sdp"
+          android:paddingRight="@dimen/_5sdp"
+          android:paddingBottom="@dimen/_4sdp"
+          android:text="BooK Now"
+          android:textColor="@color/white"
+          android:textSize="@dimen/_15ssp"
+          android:textStyle="bold" />
+    </LinearLayout>
+  </RelativeLayout>
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/_40sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <include layout="@layout/toolbar_new"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginTop="@dimen/_15sdp"
+          android:background="@color/lining" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_10sdp"
+          android:layout_marginTop="@dimen/_20sdp"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/ic_signin"
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="@dimen/_5sdp"
+              android:fontFamily="@font/josefin_sans_bold"
+              android:text="Number of Guests :"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_16sdp" />
+
+          <Spinner
+              android:id="@+id/persion_spinner"
+              android:layout_width="match_parent"
+              android:textSize="@dimen/_16sdp"
+              android:layout_height="@dimen/_40sdp"
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="@dimen/_50sdp"
+              style="@style/Heading"
+
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_signin"
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:fontFamily="@font/josefin_sans_bold"
+              android:text=" Select Date :"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_16sdp" />
+
+          <TextView
+              android:id="@+id/slectdate"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginRight="@dimen/_10sdp"
+              android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+              android:drawablePadding="@dimen/_10sdp"
+              android:fontFamily="@font/josefin_sans_bold"
+              android:gravity="right"
+
+              android:textColor="@color/black"
+              android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/ic_signin"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/_10sdp"
+           >
+
+        <TextView
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text=" Select Time  :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            />
+          <TextView
+              android:id="@+id/datepicker"
+
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/josefin_sans_bold"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_16sdp"
+              android:drawableRight="@drawable/ic_baseline_punch_clock_24"
+              android:layout_gravity="center_vertical"
+              android:layout_marginRight="@dimen/_10sdp"
+              android:drawablePadding="@dimen/_10sdp"
+              android:gravity="right"
+
+
+
+
+
+
+              />
+        </LinearLayout>
+      </LinearLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:visibility="gone"
+          android:id="@+id/timeslot"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:layout_marginRight="@dimen/_10sdp" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:layout_marginRight="@dimen/_10sdp"
+
+          />
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lawns.LawnBookingActivity">
+    <RelativeLayout
+
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:layout_weight="2"
+                android:layout_alignParentRight="true"
+                android:id="@+id/reserve"
+                style="@style/Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_design"
+                android:elevation="@dimen/_15sdp"
+                android:fontFamily="@font/josefin_sans_semibold"
+                android:paddingLeft="@dimen/_5ssp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/toolbar_new"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text=" From. "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+                        <LinearLayout
+                     android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/ic_signin"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/slectdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:gravity="center"
+                        android:text="DD-MM-YYYY"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text=" To. "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/ic_signin"
+                            android:orientation="horizontal">
+                          <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/enddate"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/josefin_sans_light"
+
+                        android:text="DD-MM-YYYY"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        />
+
+                </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Number of Guest. "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_34sdp"
+                    android:background="@drawable/ic_signin"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/guest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:hint="Please enter number of guest.."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@null"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Function Name."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_34sdp"
+                   android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/ic_signin"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/function"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:hint=" Please enter Function Name "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll1"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Food Menu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview"
+            android:layout_marginBottom="@dimen/_34sdp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

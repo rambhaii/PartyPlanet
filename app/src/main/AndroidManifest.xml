@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.partyplanets">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:maxSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PartyPlanet"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.app.partyplanets.Activity.InstructionsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.DashBoad.OpenWebsiteActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.Lawns.LawnHistoryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.Filter.RestaurentFilterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.Filter.LownFilterListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.Activity.LoginFbActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.DashBoad.EventActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.Lawns.PaymentLawnActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.Lawns.OutSideLawnBooking"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <!--
+          <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpLibraryGlideModule"
+            tools:node="remove" />
+        -->
+        <!--
+  <meta-data
+            android:name="com.app.partyplanet.Classes.CustomGlideModule." android:value="AppGlideModule"
+            />
+        -->
+        <activity
+            android:name="com.app.partyplanets.Lawns.LawnBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Filter.FilterListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Lounges.LoungeHistory"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Lounges.LoungeBooking"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Restaurants.FoodMenuHistory"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Restaurants.BookMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Restaurants.RestauMenuBooking"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Restaurants.Restaurantbooking"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.RoomsHistry"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.MainSplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.partyplanets.DashBoad.BookingConditions"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.BookingReview"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.PaymentGateway"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.FinalBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.RoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.ShowReview"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.SuccessFull"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.WriteReview"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.CovidAdvice"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.frequentlyAQ"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.Helpdesk"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.TermsAndConditions"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.VieMore"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.CartViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.BookingHotel"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.ShowDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.SearchingShowData"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.OtpVerification"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.UpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.DashBoad.DashBoad"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.SignInEmail"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.GetLocation"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.SignUp"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.Login"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.NextActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.Activity.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.partyplanets.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

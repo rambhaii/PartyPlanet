@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp">
+
+        <RelativeLayout
+            android:background="@color/textcolor"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="@drawable/edit_circle"
+                android:id="@+id/drawer_img"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/pexels"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:singleLine="true"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/emailid"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/phone"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+    android:drawablePadding="@dimen/_5sdp"
+    android:id="@+id/home_nav"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_60sdp"
+    android:layout_weight="1"
+    android:backgroundTint="@color/white"
+    android:drawableLeft="@drawable/ic_baseline_home_24"
+    android:gravity="center_vertical"
+    android:padding="@dimen/_5sdp"
+    android:paddingLeft="@dimen/_10sdp"
+    android:text="HOME"
+    android:drawableTint="@color/textcolor"
+    android:textSize="@dimen/_12sdp"
+    android:textStyle="bold" />
+
+    <TextView
+        android:drawablePadding="@dimen/_5sdp"
+        android:id="@+id/profile_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/leftuser"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="PROFILE"
+        android:drawableTint="@color/textcolor"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:drawablePadding="@dimen/_5sdp"
+        android:id="@+id/booking_history_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_booking"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="MY BOOKINGS"
+        android:drawableTint="@color/textcolor"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:drawableTint="@color/textcolor"
+        android:id="@+id/logOut_nav"
+        android:backgroundTint="@color/white"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawablePadding="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:text="LOG OUT"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12sdp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/_10sdp"/>
+</LinearLayout>
+</LinearLayout>

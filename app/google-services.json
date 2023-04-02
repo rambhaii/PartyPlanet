@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207302770500",
+    "project_id": "party-planets",
+    "storage_bucket": "party-planets.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207302770500:android:fb03accf349c6674f66111",
+        "android_client_info": {
+          "package_name": "com.app.partyplanets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207302770500-fff8bf3jkl5utd5hd1cac5nqcts5170b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcH5WELwqGkhwC0PnZAFpPqf6Y8p_Bxhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207302770500-fff8bf3jkl5utd5hd1cac5nqcts5170b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

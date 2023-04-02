@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/drawer_layout"
+    tools:context=".DashBoad.DashBoad">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottam"
+            android:layout_gravity="start"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            app:tint="@color/textcolor"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/textcolor"
+            app:labelVisibilityMode="labeled"
+            app:itemPaddingBottom="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/bottam"
+            app:layout_constraintLeft_toLeftOf="@id/bottam"
+            app:layout_constraintRight_toRightOf="@id/bottam"
+            app:menu="@menu/bottom_nav_menu"
+            android:fitsSystemWindows="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/side_list"
+        android:choiceMode="singleChoice"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:clickable="false">
+        <include layout="@layout/leftlayout" />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

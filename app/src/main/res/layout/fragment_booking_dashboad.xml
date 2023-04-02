@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingHistory.BookingDashboadFragment">
+
+  <!--  <com.google.android.material.tabs.TabLayout
+
+        android:id="@+id/tabLayout"
+        android:textColor="@color/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tabLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_35sdp"/>-->
+    <!--<FrameLayout
+        android:id="@+id/simpleFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+
+        android:textColor="@color/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</RelativeLayout>

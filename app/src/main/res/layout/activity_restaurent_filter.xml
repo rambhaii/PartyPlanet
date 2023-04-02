@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_new"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+         android:layout_margin="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:visibility="gone"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Filter Price : "
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:id="@+id/tv_setprice"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="  "
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <SeekBar
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:indeterminate="false"
+                android:max="10000"
+                android:progress="50"
+                android:thumb="@drawable/custom_thumb"
+                />
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="STAR RATING "
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/lv_1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_2sdp"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="1"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <RatingBar
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:progressTint="@color/textcolor"
+                        android:id="@+id/ratingBar1"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:numStars="1"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/rect"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="2"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <RatingBar
+                    android:progressTint="@color/textcolor"
+                    android:id="@+id/ratingBarValue2"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:numStars="1"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    />
+
+
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="3"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+
+
+                        />
+
+                    <RatingBar
+                        android:progressTint="@color/textcolor"
+                        android:id="@+id/ratingBarValue3"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:numStars="1"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/rect"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="4"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <RatingBar
+                    android:progressTint="@color/textcolor"
+                    android:id="@+id/ratingBarValue4"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:numStars="1"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    />
+
+
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_2sdp"
+
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="5"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <RatingBar
+                        android:progressTint="@color/textcolor"
+                        android:id="@+id/ratingBarValue5"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:numStars="1"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Select Timeslot :"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/timeslot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Enter Name :"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:inputType="textCapSentences"
+                        android:hint="Enter Restaurant Name "
+                        android:id="@+id/restaurent_name"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/background_login"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+
+
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Select City :"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+                <LinearLayout
+                    android:background="@drawable/background_login"
+
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+
+
+                    android:layout_width="match_parent">
+
+                    <Spinner
+
+                        android:textSize="@dimen/_18sdp"
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+
+
+                        />
+                </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/btn_submit"
+                style="@style/Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_design"
+                android:elevation="@dimen/_15sdp"
+                android:fontFamily="@font/josefin_sans_semibold"
+                android:padding="@dimen/_10sdp"
+                android:text="  Continue  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

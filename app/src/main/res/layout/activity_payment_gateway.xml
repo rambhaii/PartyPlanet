@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashBoad.PaymentGateway">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/paymentType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+       android:background="@color/black"
+        android:text="Select Payment Type"
+
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        style="@style/Heading"
+        />
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/groupradio"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+
+            android:fontFamily="@font/josefin_sans_bold"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="Online"
+            android:textSize="@dimen/_20ssp"/>
+
+        <RadioButton
+            android:fontFamily="@font/josefin_sans_bold"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:text="Case"
+            android:textSize="@dimen/_20sdp"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/idBtnPay"
+        style="@style/Heading"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+         android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_design"
+        android:elevation="@dimen/_15sdp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:paddingLeft="@dimen/_5ssp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="Pay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

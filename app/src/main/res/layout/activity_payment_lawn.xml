@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Lawns.PaymentLawnActivity">
+    <include layout="@layout/toolbar_new"/>
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/groupradio"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:fontFamily="@font/josefin_sans_bold"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="Online"
+            android:textSize="@dimen/_20ssp"/>
+
+        <RadioButton
+            android:fontFamily="@font/josefin_sans_bold"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:text="Offline"
+            android:textSize="@dimen/_20sdp"/>
+
+
+    </RadioGroup>
+
+
+    <EditText
+
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/rect"
+        android:fontFamily="@font/josefin_sans_light"
+        android:gravity="start"
+        android:hint="Write Something......" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rect"
+
+        >
+        <LinearLayout
+
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount :"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"/>
+            <TextView android:layout_width="match_parent"
+                android:textColor="@color/red"
+                android:id="@+id/totalamount_tv"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:id="@+id/idBtnPay"
+            style="@style/Heading"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/rect_design"
+            android:elevation="@dimen/_15sdp"
+            android:fontFamily="@font/josefin_sans_semibold"
+            android:paddingLeft="@dimen/_5ssp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="Confirms"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashBoad.BookingHotel">
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_60sdp"
+          android:layout_alignParentBottom="true"
+
+         >
+         <eightbitlab.com.blurview.BlurView
+           android:id="@+id/blurView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:blurOverlayColor="@color/colorOverlay">
+
+
+     <RelativeLayout
+         android:layout_marginLeft="@dimen/_20sdp"
+         android:layout_marginRight="@dimen/_20sdp"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_50sdp"
+         android:background="@color/black">
+
+         <TextView
+             android:layout_marginLeft="@dimen/_80sdp"
+             android:layout_marginTop="@dimen/_15sdp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/josefin_sans_bold"
+             android:text="FINAL STEP "
+             android:textAlignment="center"
+             android:textColor="@color/white"
+             android:textSize="@dimen/_18sdp"
+             android:textStyle="bold"
+             />
+
+     </RelativeLayout>
+     </eightbitlab.com.blurview.BlurView>
+     </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_new"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_180sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/nature" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_below="@id/image"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="-28dp"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:src="@drawable/like"
+                                android:visibility="gone"
+                                app:tint="@color/red" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_weight=".0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_1sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="Sun Island Resort and Spa"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-10dp"
+                                android:orientation="horizontal">
+
+                                <RatingBar
+                                    android:isIndicator="true"
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-75dp"
+                                    android:numStars="5"
+                                    android:progressTint="@color/textcolor"
+
+                                    android:scaleX=".4"
+                                    android:scaleY=".4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-65dp"
+                                    android:layout_marginTop="@dimen/_14sdp"
+                                    android:text="4.5 %"
+                                    android:textSize="@dimen/_8sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-15dp"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_excelent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.0"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:text="Excellent"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <TextView
+                                    android:id="@+id/review"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:text="0"
+                                    android:textColor="#707070"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:text="reviews"
+                                    android:textColor="#707070"
+                                    android:textSize="@dimen/_9sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/pre_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/strike_through"
+                                android:fontFamily="@font/josefin_sans_light"
+                                android:text="₹ 24,000"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:id="@+id/new_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="₹ 14,000"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_17sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/lining" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/datepic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Check-in Date"
+                            android:textSize="@dimen/_14sdp"
+                            android:fontFamily="@font/josefin_sans_bold"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/showdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/josefin_sans"
+                            android:text="select date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/_2sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:background="@color/lining" />
+
+                    <LinearLayout
+                        android:id="@+id/enddate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Check-out Date"
+                            android:fontFamily="@font/josefin_sans_bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:id="@+id/showenddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/josefin_sans"
+                            android:text="select date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/_23sdp"
+                                android:background="@color/lining" />
+                            <TextView
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="You selected"
+                                android:textSize="@dimen/_12sdp"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 Night,1 Room (10x Double room with graden view )"
+                                android:fontFamily="@font/josefin_sans"
+                                android:textStyle="bold"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/_23sdp"
+                                android:background="@color/lining"
+                                />
+                            <LinearLayout
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                >
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    >
+                                    <TextView
+                                        android:layout_gravity="right"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Original Price"
+                                        android:textSize="@dimen/_12sdp"
+                                        />
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_gravity="right"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bonus Saving "
+                                        android:textSize="@dimen/_12sdp"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                     android:layout_weight="2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    >
+                                    <TextView
+                                        android:layout_gravity="right"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rs.3,5667.43"
+                                        android:textSize="@dimen/_12sdp"
+                                        />
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_gravity="right"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rs.3,5667.43"
+                                        android:textSize="@dimen/_12sdp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/_23sdp"
+                                android:background="@color/lining"
+                                />
+                            <LinearLayout
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+
+                                >
+                                <TextView
+                                       android:fontFamily="@font/josefin_sans_bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        />
+                                <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="@dimen/_110sdp"
+                                    >
+                                    <TextView
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:fontFamily="@font/josefin_sans_bold"
+                                    android:gravity="right"
+                                    android:text="Rs.3,56743"
+                                    android:textColor="@color/red"
+                                    android:background="@drawable/strike_through"
+                                  />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:fontFamily="@font/josefin_sans_bold"
+                                        android:gravity="right"
+                                        android:text="Rs. 1,070"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+
+                                >
+                                <TextView
+                                    android:id="@+id/ditailsprice"
+                                    android:fontFamily="@font/josefin_sans_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View Price Breaakdown"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/blue"
+                                    android:textStyle="bold"
+                                    />
+
+                                    <TextView
+
+                                        android:layout_marginLeft="@dimen/_20sdp"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/josefin_sans_light"
+                                        android:text="+ Rs.1,230 taxes and changes "
+                                        />
+
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/_23sdp"
+                                android:background="@color/lining"
+                                />
+                            <TextView
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Review House Rules"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="Sun Island Resort &amp; Spa"
+                                android:textSize="@dimen/_13sdp"
+                                />
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="Your host would like you to agree to the following house rules  "
+                                android:textSize="@dimen/_10sdp"
+                                />
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="1. Pets are not allowed"
+                                android:textSize="@dimen/_10sdp"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/_23sdp"
+                                android:background="@color/lining"
+                                />
+                            <TextView
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Concelation Policy"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="Non-refundable"
+                                android:textSize="@dimen/_13sdp"
+                                />
+                            <TextView
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="Booking condition"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/blue"
+                                />-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/lining" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Select Adults and Child "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Breakfast included "
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="Select Adults : "
+                        android:textSize="@dimen/_15sdp" />
+                    <Spinner
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:id="@+id/adults_spinner"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textAlignment="center"
+
+
+                        />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/josefin_sans_bold"
+                            android:text="Select Children's : "
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Spinner
+                            android:textAlignment="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:id="@+id/child_spinner"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_35sdp"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@color/black">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="SEARCH ROOMS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

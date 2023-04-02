@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:blurOverlayColor="@color/white">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/back"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="X"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Terms and Policies"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_16sdp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/polices"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        />
+
+                    <CheckBox
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_18ssp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Accept"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:textColor="@color/textcolor"
+                        android:buttonTint="@color/textcolor"
+                        />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Access at any time in  "/>
+                        <TextView
+                            android:id="@+id/permision"
+                            android:textColor="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="permission setting"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+
+
+                        <Button
+                          android:visibility="gone"
+                            android:id="@+id/okButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/rect"
+                            android:backgroundTint="@color/textcolor"
+                            android:padding="@dimen/_5sdp"
+                            android:text="   Next   "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+
+</LinearLayout>

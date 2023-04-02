@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GetLocation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginRight="@dimen/_60sdp"
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/abc" />
+
+            <TextView
+                android:id="@+id/tv_welcomeback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/josefin_sans_semibold"
+                android:gravity="start"
+                android:text="Tell us your location "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_26sdp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                style="@style/Heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This helps us recommend the best space and offers
+                     around you "
+                android:textColor="#9C000000"
+                android:textSize="@dimen/_11ssp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="animatio_locations.json"
+                        app:lottie_loop="true"
+                        app:lottie_speed="1" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:background="@drawable/ic_signin"
+                    android:id="@+id/getcuurentlocaton"
+                    android:padding="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/location_logo"
+                    android:fontFamily="@font/josefin_sans_semibold"
+                    android:gravity="center"
+                    android:text="Auto detect my location "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_70sdp"
+                style="@style/Heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No,I will type my location every time "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12ssp"
+                android:background="@drawable/linespacing"
+                android:backgroundTint="@color/blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
